@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RubyController : MonoBehaviour
 {
+    public float speed = 3.5f;
     public int maxHealth = 5;
     private int currentHealth;
 
@@ -28,12 +30,13 @@ public class RubyController : MonoBehaviour
     //used for directly influincing physics components
     void FixedUpdate() {
         Vector2 position = rigidBody2D.position;
-        position.y += 3.5f * vertical * Time.deltaTime;
-        position.x += 3.5f * horizontal * Time.deltaTime;
+        position.y += speed * vertical * Time.deltaTime;
+        position.x += speed * horizontal * Time.deltaTime;
         rigidBody2D.MovePosition(position);
     }
 
-    void ChangeHealth(int amount) {
-        
+    public void ChangeHealth(int amount) {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 }
