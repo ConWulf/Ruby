@@ -5748,6 +5748,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!198 &877167797 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7033794631997769497, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
+  m_PrefabInstance: {fileID: 2066478522785374410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1002912780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,7 +5807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002912780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.029506952, y: 0.48479682, z: -52.73464}
+  m_LocalPosition: {x: -0.029506952, y: 0.48479682, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5848,7 +5853,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1743664952}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 8
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -6154,7 +6159,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6178,7 +6183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563616004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8072853, y: -0.515203, z: -10}
+  m_LocalPosition: {x: -2, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6278,6 +6283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruby
       objectReference: {fileID: 0}
+    - target: {fileID: 2066478523372940804, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
+      propertyPath: healthEffect
+      value: 
+      objectReference: {fileID: 877167797}
     - target: {fileID: 2066478523372940807, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -6321,6 +6330,18 @@ PrefabInstance:
     - target: {fileID: 2066478523372940807, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033794631997769497, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033794631997769497, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033794631997769497, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbb74b209aad34a5aab0dd6a318c8f79, type: 3}
@@ -6562,6 +6583,22 @@ PrefabInstance:
     - target: {fileID: 1141620263649734065, guid: ce8db9721600e42c9b2bc475f30f3a4a, type: 3}
       propertyPath: m_Name
       value: Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093879741569725646, guid: ce8db9721600e42c9b2bc475f30f3a4a, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093879741569725647, guid: ce8db9721600e42c9b2bc475f30f3a4a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093879741569725647, guid: ce8db9721600e42c9b2bc475f30f3a4a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093879741569725647, guid: ce8db9721600e42c9b2bc475f30f3a4a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8679388083018550120, guid: ce8db9721600e42c9b2bc475f30f3a4a, type: 3}
       propertyPath: m_RootOrder

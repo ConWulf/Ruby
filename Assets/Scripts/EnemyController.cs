@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
     float timer;
     int direction = 1;
     public int maxHealth = 3;
+    public ParticleSystem smokeEffect;
 
     public int health { get {return currentHealth; }}
     int currentHealth;
@@ -70,6 +71,7 @@ public class EnemyController : MonoBehaviour
     public void Fix() {
         broken = false;
         rigidBody2D.simulated = false;
+        smokeEffect.Stop();
         animator.SetTrigger("Fixed");
     }
 }
