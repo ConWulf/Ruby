@@ -14,7 +14,6 @@ public class RubyController : MonoBehaviour
     bool isInvincible;
     float invincibleTimer;
     public GameObject projectilePrefab;
-    public ParticleSystem healthEffect;
 
     Rigidbody2D rigidBody2D;
     float horizontal;
@@ -75,14 +74,9 @@ public class RubyController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-        } else {
-            if(healthEffect != null) {
-                Instantiate(healthEffect);
-                healthEffect.Stop();    
-            }
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
     void launch() {
