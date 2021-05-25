@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7641156357934843034, guid: 5b71cb13f6ddd4e3cb67c727683ba82e, type: 3}
       propertyPath: m_Name
-      value: collectHealth
+      value: HealthEffect
       objectReference: {fileID: 0}
     - target: {fileID: 7641156357934843036, guid: 5b71cb13f6ddd4e3cb67c727683ba82e, type: 3}
       propertyPath: stopAction
