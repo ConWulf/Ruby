@@ -103,6 +103,8 @@ MonoBehaviour:
   maxHealth: 5
   timeInvincible: 2
   projectilePrefab: {fileID: 2321608615341571500, guid: 920d33dc2480a48e488420abb4f403b3, type: 3}
+  throwSound: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
+  hitSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
 --- !u!50 &1057394380
 Rigidbody2D:
   serializedVersion: 4
@@ -210,8 +212,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: af5f8b64e3f58f24c87ff8f789b04f6c, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
