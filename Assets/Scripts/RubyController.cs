@@ -33,6 +33,7 @@ public class RubyController : MonoBehaviour
     public void PlaySound(AudioClip clip) {
         audioSource.PlayOneShot(clip, 0.3f);
     }
+    
     // Update is called once per frame
     void Update() {
         horizontal = Input.GetAxis("Horizontal");
@@ -80,6 +81,7 @@ public class RubyController : MonoBehaviour
         rigidBody2D.MovePosition(position);
     }
 
+    //change health by the passed in amount
     public void ChangeHealth(int amount) {
         if(amount < 0) {
             animator.SetTrigger("Hit");
